@@ -6,10 +6,15 @@ import java.util.Scanner;
 
 public class Main {
 
+    public static void changeX(int[] x){
+        x[0] += 15;
+        System.out.println(x);
+        System.out.println(x[0]);
+    }
+//
     public static void main(String[] args) {
-        String name = JOptionPane.showInputDialog("Hi enter your name");
-        JOptionPane.showMessageDialog(null,"You are " + name);
-
+//        Object v =  Scanner(System.in);
+//        System.out.println(v.getClass().getName());
     }
 }
 
