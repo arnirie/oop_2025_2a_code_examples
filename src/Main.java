@@ -6,16 +6,27 @@ import java.util.Scanner;
 
 public class Main {
 
-    public static void changeX(int[] x){
-        x[0] += 15;
-        System.out.println(x);
-        System.out.println(x[0]);
-    }
-//
+
     public static void main(String[] args) {
-//        Object v =  Scanner(System.in);
-//        System.out.println(v.getClass().getName());
+        Count c1 = new Count();
+        Count c2 = new Count();
+        System.out.println(c1.getInstanceCount());
+        System.out.println(c2.getInstanceCount());
     }
+}
+
+class Count{
+    static int count = 0;
+    int instanceCount = 0;
+
+    Count(){
+        count++;
+        instanceCount++;
+    }
+
+    public static int getCount(){ return count; }
+
+    public int getInstanceCount(){ return instanceCount; }
 }
 
 /*
